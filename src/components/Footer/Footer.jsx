@@ -1,12 +1,12 @@
 import React from 'react';
-// import {
-//   MDBFooter,
-//   MDBContainer,
-//   MDBCol,
-//   MDBRow
-// } from 'mdb-react-ui-kit';
-import logo from "./assets/images/logo.png";
+
 import "./assets/css/Footer.css";
+import { Link } from 'react-router-dom/dist';
+import FooterLink from '../Footer Link/FooterLink';
+import Logo from "./assets/images/logo.svg";
+import Facbook from "./assets/images/facebook.svg";
+import Twitter from "./assets/images/twitter.svg";
+import Youtube from "./assets/images/Youtube.svg"
 
 
 
@@ -16,141 +16,56 @@ import "./assets/css/Footer.css";
 function Footer() {
   return (
 
- <>
+    <>
 
-<div bgColor='light' className='text-center text-lg-left'>
-      <div className='p-4'>
-        <div className='RO-footer'>
-          <div lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Links</h5>
+      <div className='text-center text-lg-left'>
+        
+          <div className='RO-footer'>
+            <div lg='3' md='6' className='mb-4 mb-md-0'>
 
-            <ul className='list-unstyled mb-0'>
-              <li>
-                <a href='#!' className='text-dark'>
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                  Link 4
-                </a>
-              </li>
-            </ul>
+              {/* right section of footer, logo section  */}
+              <div className='d-flex gap-2 '>
+                <img src={Logo} alt="logo" id="RO-imgFooter"/>
+                <h5 className='RO-FLogo'>UpDate</h5>
+              </div>
+
+              <p className='RO-FooterP'>support@update.com</p>
+              <p className='RO-FooterP'> +1 (213) 677 10 24</p>
+              <div className="d-flex gap-3 my-5">
+              <img src={Youtube} alt=" youtube logo" />
+                <img src={Youtube} alt=" youtube logo" />
+                <img src={Youtube} alt=" youtube logo" />
+              </div>
+
+            </div>
+
+            <FooterLink title="Courses" link1="Animation" path1="#" link2="Design" path2="#" link3="Illustration" path3="#" link4="Programming" path4="#" link5="Photo & Film" path5="#" link6="Marketing" path6="#"></FooterLink>
+            <FooterLink title="Teachers" link1="All Teachers" path1="#" link2="Become a Teacher" path2="#"></FooterLink>
+            <FooterLink title="Information" link1="Blog" path1="#" link2="About us" path2="#" link3="FAQ" path3="#"></FooterLink>
+            <FooterLink title="En" link1="English" path1="#" link2="French" path2="#" link3="Russian" path3="#"></FooterLink>
+
+
+
+
+
+
+
+
           </div>
+      
 
-          <div lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Courses</h5>
-
-            <ul className='list-unstyled mb-0'>
-              <li>
-                <a href='#!' className='text-dark'>
-                Animation
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                Design
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                Illustration                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                Programming                </a>
-              </li>
-
-              <li>
-                <a href='#!' className='text-dark'>
-                Marketing               </a>
-              </li>
-
-              <li>
-                <a href='#!' className='text-dark'>
-                Photo & Film               </a>
-              </li>
-
-            </ul>
-          </div>
-
-          <div lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase mb-0'>Teachers</h5>
-
-            <ul className='list-unstyled'>
-              <li>
-                <a href='#!' className='text-dark'>
-                All Teachers                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                Become a Teacher                </a>
-              </li>
-             
-            </ul>
-          </div>
-
-          <div lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Information</h5>
-
-            <ul className='list-unstyled mb-0'>
-              <li>
-                <a href='#!' className='text-dark'>
-                Blog                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                About us                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                FAQ                </a>
-              </li>
-              
-            </ul>
-          </div>
-
-          <div lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase mb-0'>En</h5>
-
-            <ul className='list-unstyled'>
-              <li>
-                <a href='#!' className='text-dark'>
-                English                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                French                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-dark'>
-                Russian                </a>
-              </li>
-              
-            </ul>
-          </div>
+        <div className='text-center p-3 RO-endFooter' >
+          <span> Policy privacy </span>  <span>Copyright 2022. All rights reserved</span>
         </div>
+
+        
+
+        
       </div>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-    <span> Policy privacy </span> <span>Copyright 2022. All rights reserved</span>
-       
-      </div>
-    </div>
 
 
- 
- </>
+    </>
   )
 
 }
