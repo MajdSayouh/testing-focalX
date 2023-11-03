@@ -1,3 +1,4 @@
+import TrainingContent from "../TrainingContent/TrainingContent";
 import "./Training.css";
 const Training = () => {
   return (
@@ -8,28 +9,24 @@ const Training = () => {
         </div>
         <div className=" d-flex flex-column align-items-center justify-content-center">
           <div className=" d-flex flex-wrap">
-            <div className="ma-training-part">
-              <h1>1.</h1>
-              <div className="ma-training-underline"></div>
-              <p>Study the material on the platform at any convenient time</p>
-            </div>
-            <div className="ma-training-part">
-              <h1>2.</h1>
-              <div className="ma-training-underline"></div>
-              <p>Do practical tasks, get feedback and consolidate knowledge</p>
-            </div>
+            <TrainingContent
+              h1="1."
+              p="Study the material on the platform at any convenient time"
+            />
+            <TrainingContent
+              h1="2."
+              p="Do practical tasks, get feedback and consolidate knowledge"
+            />
           </div>
           <div className=" d-flex flex-wrap">
-            <div className="ma-training-part">
-              <h1>3.</h1>
-              <div className="ma-training-underline"></div>
-              <p>Prepare a project and add it to your portfolio</p>
-            </div>
-            <div className="ma-training-part">
-              <h1>4.</h1>
-              <div className="ma-training-underline"></div>
-              <p>Prepare a project and add it to your portfolio</p>
-            </div>
+            <TrainingContent
+              h1="3."
+              p="Prepare a project and add it to your portfolio"
+            />
+            <TrainingContent
+              h1="2."
+              p="Prepare a project and add it to your portfolio"
+            />
           </div>
         </div>
       </div>

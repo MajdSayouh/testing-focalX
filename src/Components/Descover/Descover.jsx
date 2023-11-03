@@ -4,6 +4,7 @@ import img6 from "./../../assets/img/Image design art (1).png";
 import img7 from "./../../assets/img/image Animation (1).png";
 import img8 from "./../../assets/img/Icon arrow.png";
 import "./Descover.css";
+import DescoverContent from "../DescoverContent/DescoverContent";
 const Descover = () => {
   return (
     <section className="ma-section-descover container">
@@ -41,38 +42,32 @@ const Descover = () => {
           </div>
         </nav>
         <div className=" d-flex flex-wrap gap-3">
-          <div className="ma-descover-name m-auto">
-            <img src={img4} alt="" className="ma-descover-card" />
-            <h3>Sales Marketing</h3>
-            <div className="d d-flex justify-content-between align-items-center">
-              <p>6 months</p>
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="ma-descover-name m-auto">
-            <img src={img5} alt="" className="ma-descover-card2" />
+          <DescoverContent
+            imgOne={img4}
+            h3="Sales Marketing"
+            p="6 months"
+            imgTow={img8}
+          />
+          <div className="ma-descover-name m-auto ">
+            <img src={img5} alt="" className="ma-descover-card2 " />
             <h3>Data analytics</h3>
             <div className="d d-flex justify-content-between align-items-center">
               <p>9 months</p>
               <img src={img8} alt="" />
             </div>
           </div>
-          <div className="ma-descover-name m-auto">
-            <img src={img6} alt="" className="ma-descover-card" />
-            <h3>Design art</h3>
-            <div className="d d-flex justify-content-between align-items-center">
-              <p>4 months</p>
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="ma-descover-name m-auto">
-            <img src={img7} alt="" className="ma-descover-card" />
-            <h3>Animation </h3>
-            <div className="d d-flex justify-content-between align-items-center">
-              <p>months</p>
-              <img src={img8} alt="" />
-            </div>
-          </div>
+          <DescoverContent
+            imgOne={img6}
+            h3="Design art"
+            p="4 months"
+            imgTow={img8}
+          />
+          <DescoverContent
+            imgOne={img7}
+            h3="Sales Marketing"
+            p="months"
+            imgTow={img8}
+          />
         </div>
       </div>
     </section>
