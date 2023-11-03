@@ -5,6 +5,7 @@ import Promotion from './components/Promotion/Promotion';
 import RealCreators from './components/RealCreators/RealCreators';
 import NotFind from './components/NotFind/NotFind';
 import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -16,6 +17,9 @@ function App() {
       <OurStudent />
       <RealCreators/>
       <NotFind/>
+      <FAQ/>
+      {/* <Footer/> */}
+      
 
 
 
