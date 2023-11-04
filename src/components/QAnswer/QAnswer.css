@@ -1,0 +1,93 @@
+.accordion-item {
+  
+    border-bottom: 2px solid #19191C !important;
+    border-radius: 0 !important;
+
+}
+
+#headingOne {
+    font-size: 24px;
+    color: var(--Grayscale, #19191C);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  
+
+
+  
+  /* +  (plus) */
+  .accordion-button::after {
+    background-image: none;
+    content: "+";
+    position: absolute;
+    top: 42%;
+    display: block;
+    width: 15px;
+    height: 15px;
+    font-size: 40px;
+    left: 98%;
+    font-weight: normal;
+  }
+  
+  
+  
+  /* element */
+  .ro-accordion .accordion-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  button.accordion-button.collapsed {
+    color: var(--Grayscale, #19191C);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px
+  }
+  button.accordion-button.collapsed:focus{
+    border: none;
+    outline: none;
+  }
+  
+  .ro-accordion .card-body {
+    margin-top: 30px;
+  }
+  
+  .accordion-button:focus,
+  .accordion-button:hover {
+    border: none;
+  }
+  
+  
+  /* - (minus)*/
+  .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "-";
+    position: absolute;
+    top: 50%;
+    display: block;
+    font-weight: bolder;
+    height: 15px;
+    width: 15px;
+    font-size: 40px;
+    left: 98%;
+    font-weight: normal;
+  }
+  
+  .accordion .accordion-item,
+  .accordion-item .accordion-header button {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .accordion-item .accordion-header button {
+    border: none;
+    outline: none;
+  }
