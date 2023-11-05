@@ -1,32 +1,45 @@
 import { useState } from 'react'
 import './App.css'
-import OurStudent from './components/OurStudent/OurStudent';
-import Promotion from './components/Promotion/Promotion';
-import RealCreators from './components/RealCreators/RealCreators';
-import NotFind from './components/NotFind/NotFind';
-import FAQ from './components/FAQ/FAQ';
+
 import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom/dist';
 import { Route } from 'react-router-dom/dist';
 import { Routes } from 'react-router-dom/dist';
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Nav from "./Components/Nav/Nav";
 
+import HomePage from './Components/HomePage/HomePage';
+import CoursesPage from './Components/CoursesPage/CoursesPage';
 
 function App() {
 
   return (
+
+    
     <div>
-      <Promotion />
-      <OurStudent />
-      <RealCreators/>
-      <NotFind/>
-      <FAQ/>
+       <Nav />
+       <Routes>
+
+        <Route path='/' element={<HomePage/>}></Route>
+        <Route path='/courses' element={<CoursesPage/>}></Route>
+
+
+       </Routes>
+
+   
+      
       <Footer/>
+
+
       
 
 
 
     </div>
   )
+
 }
 
-export default App
+export default App;

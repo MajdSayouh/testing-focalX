@@ -16,10 +16,10 @@ function FAQ() {
 
          
 
-          <QAnswer qusetion="Omnis voluptas assumenda est, omnis dolor repellendus?" answer="lorem lorem"></QAnswer>
-          <QAnswer qusetion="Rerum hic tenetur a sapiente delectus?" answer="lorem loem"></QAnswer>
-          <QAnswer qusetion="Alias consequatur aut perferendis doloribus asperiores repellat?" answer="lorem lorem"></QAnswer>
-          <QAnswer qusetion="Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi?" answer="lorem"></QAnswer>
+          <QAnswer visible="none" qusetion="Omnis voluptas assumenda est, omnis dolor repellendus?" answer="lorem lorem"></QAnswer>
+          <QAnswer visible="none" qusetion="Rerum hic tenetur a sapiente delectus?" answer="lorem loem"></QAnswer>
+          <QAnswer visible="none" qusetion="Alias consequatur aut perferendis doloribus asperiores repellat?" answer="lorem lorem"></QAnswer>
+          <QAnswer visible="none" qusetion="Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi?" answer="lorem"></QAnswer>
 
 
        
