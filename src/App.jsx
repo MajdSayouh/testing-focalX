@@ -12,6 +12,7 @@ import Nav from "./Components/Nav/Nav";
 
 import HomePage from './Components/HomePage/HomePage';
 import CoursesPage from './Components/CoursesPage/CoursesPage';
+import ArticlePage from './Components/ArticlePage/ArticlePage';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
         <Route path='/' element={<HomePage/>}></Route>
         <Route path='/courses' element={<CoursesPage/>}></Route>
+        <Route path='/article' element={<ArticlePage/>}></Route>
 
 
        </Routes>

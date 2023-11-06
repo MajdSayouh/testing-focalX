@@ -58,7 +58,7 @@ function Footer() {
           </div>
       
 
-        <div className='text-center p-3 RO-endFooter' >
+        <div className='text-center  RO-endFooter' >
           <span> Policy privacy </span>  <span>Copyright 2022. All rights reserved</span>
         </div>
 
