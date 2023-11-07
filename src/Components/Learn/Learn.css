@@ -14,10 +14,11 @@
 
 .ma-section-learn .ma-section-part .ma-learn-paragraph {
     width: 560px;
-    color: #EFEFF2;
     font-size: 18px;
     line-height: 28px;
 }
+
+.ma-section-learn .ma-2 {color: #EFEFF2 !important;}
 
 .ma-learn-num p {
     color: #EFEFF2;

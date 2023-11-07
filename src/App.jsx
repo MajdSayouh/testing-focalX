@@ -1,5 +1,10 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import { BrowserRouter } from "react-router-dom/dist";
+import { Routes, Route } from "react-router-dom/dist";
+import Home from "./Components/Home/Home";
+import Courses from "./Components/Courses/Courses/Courses";
+import Blogs from "./Components/Blogs/Blogs";
+
 
 import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom/dist';
@@ -20,11 +25,15 @@ import What from "./Components/What/What";
 import Training from "./Components/Training/Training";
 
 function App() {
-
   return (
 
     
     <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/blogs" element={<Blogs />} />
+      </Routes>
        <Nav />
        <Routes>
 
@@ -55,8 +64,7 @@ function App() {
 
 
     </div>
-  )
-
+  );
 }
 
 export default App;

@@ -13,6 +13,7 @@ const Hero = () => {
           hTow="50%"
           pTow="24 Days 17:44:16"
         />
+
         <div className="ma-hero-right">
           <img src={img2} alt="" />
           <div className="ma-hero-btn position-relative">
