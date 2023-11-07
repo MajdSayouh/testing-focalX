@@ -26,6 +26,7 @@
     color: #19191C;
     font-size: 18px;
     line-height: 28px;
+    width: 613px;
 }
 
 .ma-hero-left p a {
@@ -129,4 +130,6 @@
         width: auto;
         font-size: 50px;
     }
+
+    .ma-hero-left p {width: auto;}
 }

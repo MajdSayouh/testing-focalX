@@ -5,11 +5,11 @@ const Learn = () => {
       <div className=" d-flex align-items-center container ma-section-part justify-content-between flex-wrap">
         <div>
           <h1 className=" text-light">What you will learn</h1>
-          <p className="ma-learn-paragraph">
+          <p className="ma-learn-paragraph ma-2">
             Up-to-date knowledge from recognized market experts for beginners
             and practitioners
           </p>
-          <p className="ma-learn-paragraph">
+          <p className="ma-learn-paragraph ma-2">
             On the platform, you can gain knowledge on current topics and
             in-demand skills. All courses are aimed at practice: we monitor the
             relevance of the material and help with employment and internship

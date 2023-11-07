@@ -28,7 +28,7 @@ const Nav = () => {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle ma-link-nav"
-                  href="#"
+                  href="/courses"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
