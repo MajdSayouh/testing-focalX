@@ -12,7 +12,7 @@ const FooterLink = (props) => {
     <div>
 
       <div lg='3' md='6' className='mb-4 mb-md-0 RO-FooterLink'>
-        <h5>{title}</h5>
+        <h5 className='mb-4'>{title}</h5>
 
         <ul className='list-unstyled mb-0'>
           <li>

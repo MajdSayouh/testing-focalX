@@ -4,8 +4,8 @@ import "./assets/css/Footer.css";
 import { Link } from 'react-router-dom/dist';
 import FooterLink from '../Footer Link/FooterLink';
 import Logo from "./assets/images/logo.svg";
-import Facbook from "./assets/images/facebook.svg";
-import Twitter from "./assets/images/twitter.svg";
+import Facbook from "./assets/images/brandico_facebook.svg";
+import Twitter from "./assets/images/akar-icons_twitter-fill.svg";
 import Youtube from "./assets/images/Youtube.svg"
 
 
@@ -24,17 +24,21 @@ function Footer() {
             <div lg='3' md='6' className='mb-4 mb-md-0'>
 
               {/* right section of footer, logo section  */}
-              <div className='d-flex gap-2 '>
+
+              {/* RO-FMauto for justify center in small screens */}
+              <div className='d-flex gap-2 RO-FMauto'>
                 <img src={Logo} alt="logo" id="RO-imgFooter"/>
                 <h5 className='RO-FLogo'>UpDate</h5>
               </div>
 
               <p className='RO-FooterP'>support@update.com</p>
               <p className='RO-FooterP'> +1 (213) 677 10 24</p>
-              <div className="d-flex gap-3 my-5">
-              <img src={Youtube} alt=" youtube logo" />
-                <img src={Youtube} alt=" youtube logo" />
-                <img src={Youtube} alt=" youtube logo" />
+              <div className="d-flex gap-3 my-5 RO-FMauto">
+               
+            <a href=""><img src={Facbook} alt=" Facebook logo" className='RO-FooterBgImg' /></a>
+
+              <a href=""><img src={Youtube} alt=" youtube logo" /></a>
+              <a href=""><img src={Twitter} alt=" Twitter logo" className='RO-FooterBgImg'/></a>
               </div>
 
             </div>
@@ -54,7 +58,7 @@ function Footer() {
           </div>
       
 
-        <div className='text-center p-3 RO-endFooter' >
+        <div className='text-center  RO-endFooter' >
           <span> Policy privacy </span>  <span>Copyright 2022. All rights reserved</span>
         </div>
 

@@ -47,6 +47,13 @@ line-height: 28px;
 padding-bottom: 40px !important;
     
 }
+.RO-FooterBgImg{
+    width: 28px;
+    height: 28px;
+    background-color: #FBFBFC;
+    box-sizing: border-box;
+    padding: 5px;
+}
 
 @media screen and (max-width:992px) {
     html {
@@ -63,6 +70,19 @@ padding-bottom: 40px !important;
 @media screen and (max-width:750px){
     .RO-footer{
         grid-template-columns: repeat(2,auto);}
+
+
+}
+@media screen and (max-width:600px){
+    .RO-footer{
+        grid-template-columns: repeat(1,auto);
+        gap: 50px;
+        text-align: center !important;
+    
+    }
+    .RO-FMauto{
+        justify-content: center;
+    }
 
 
 }
