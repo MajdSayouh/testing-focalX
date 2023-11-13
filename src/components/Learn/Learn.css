@@ -10,13 +10,17 @@
     color: #FBFBFC;
     font-size: 58px;
     font-weight: 700;
+    z-index: 2;
+
 }
 
 .ma-section-learn .ma-section-part .ma-learn-paragraph {
     width: 560px;
-    color: #EFEFF2;
+    color: #EFEFF2 !important;
     font-size: 18px;
     line-height: 28px;
+    z-index: 22;
+
 }
 
 .ma-learn-num p {
@@ -24,6 +28,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+    z-index: 2;
 }
 
 .ma-section-underline {

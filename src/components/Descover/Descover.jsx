@@ -41,7 +41,7 @@ const Descover = () => {
             </div>
           </div>
         </nav>
-        <div className=" d-flex flex-wrap gap-3">
+        <div className=" d-flex flex-wrap gap-2 flex-row">
           <DescoverContent
             imgOne={img4}
             h3="Sales Marketing"

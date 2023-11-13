@@ -1,68 +1,25 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom/dist";
 import { Routes, Route } from "react-router-dom/dist";
-import Home from "./Components/Home/Home";
-import Courses from "./Components/Courses/Courses/Courses";
-import Blogs from "./Components/Blogs/Blogs";
-
-
-import Footer from './components/Footer/Footer';
-import { BrowserRouter } from 'react-router-dom/dist';
-import { Route } from 'react-router-dom/dist';
-import { Routes } from 'react-router-dom/dist';
-
+import Home from "../src/Components/Home/Home";
+import Courses from "../src/modules/Courses/Courses/Courses/Courses";
+import Blogs from "../src/modules/Blogs/Blogs/Blogs";
 
 import Nav from "./Components/Nav/Nav";
 
-import HomePage from './Components/HomePage/HomePage';
-import CoursesPage from './Components/CoursesPage/CoursesPage';
-import ArticlePage from './Components/ArticlePage/ArticlePage';
-
-import Hero from "./Components/Hero/Hero";
-import Learn from "./Components/Learn/Learn";
-import Descover from "./Components/Descover/Descover";
-import What from "./Components/What/What";
-import Training from "./Components/Training/Training";
+import Footer from "./Components/Footer/Footer";
+import ArticlePage from "./modules/Articles/ArticlePage/ArticlePage";
 
 function App() {
   return (
-
-    
     <div>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/article" element={<ArticlePage />}></Route>
       </Routes>
-       <Nav />
-       <Routes>
-
-        <Route path='/' element={<HomePage/>}></Route>
-        <Route path='/courses' element={<CoursesPage/>}></Route>
-        <Route path='/article' element={<ArticlePage/>}></Route>
-
-
-       </Routes>
-
-   
-      
-      <Hero />
-      <Learn />
-      <Descover />
-      <What />
-      <Training />
-      <Promotion />
-      <OurStudent />
-      <RealCreators/>
-      <NotFind/>
-      <FAQ/>
-      <Footer/>
-
-
-      
-
-
-
+      <Footer />
     </div>
   );
 }

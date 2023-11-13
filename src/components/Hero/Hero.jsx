@@ -1,7 +1,21 @@
 import "./Hero.css";
 import img2 from "./../../assets/img/confident-sassy-young-bearded-gay-man-pink-t-shirt-shirt-hold-hand-waist-pointing-upper-left-corner-smiling-suggest-friends-visit-party-nearby 1.png";
 import HeroContent from "../HeroContent/HeroContent";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Hero = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    try {
+      axios
+        .get("http://127.0.0.1:8000/api/best-discount")
+        .then((res) => setData(res.data.data));
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
   return (
     <div className="ma-hero">
       <div className=" container ma-hero-two ">
@@ -10,8 +24,8 @@ const Hero = () => {
           pOne=" Start learning for"
           a="free"
           button="Choose a cource"
-          hTow="50%"
-          pTow="24 Days 17:44:16"
+          hTow={data.discount_percent}
+          pTow={data.time_expired}
         />
         <div className="ma-hero-right">
           <img src={img2} alt="" />

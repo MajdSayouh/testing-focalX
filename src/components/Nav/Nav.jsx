@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "./../../assets/img/logo.png";
 import "./Nav.css";
 const Nav = () => {
@@ -7,7 +8,7 @@ const Nav = () => {
         <div className="container gap-5">
           <a
             className="navbar-brand d-flex align-items-center gap-2 ma-brand-nav"
-            href="#"
+            href="/"
           >
             <img src={img1} alt="logo" className="ma-img-nav" />
             <p className="mb-1">UpDate</p>
@@ -26,16 +27,16 @@ const Nav = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-3 align-items-center">
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle ma-link-nav"
-                  href="#"
+                  to="/courses"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Courses
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
@@ -82,9 +83,14 @@ const Nav = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link ma-link-nav" href="#">
+                <Link className="nav-link ma-link-nav" to={"/blogs"}>
                   Blog
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link ma-link-nav" to={"/article"}>
+                  Article
+                </Link>
               </li>
             </ul>
             <ul className="navbar-nav mb-2 mb-lg-0 gap-3 align-items-center">

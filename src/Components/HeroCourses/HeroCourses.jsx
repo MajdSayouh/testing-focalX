@@ -1,7 +1,8 @@
 import HeroContent from "../HeroContent/HeroContent";
 import "./HeroCourses.css";
 import img10 from "./../../assets/img/business-finance-employment-female-successful-entrepreneurs-concept-confident-smiling-asian-businesswoman-office-worker-white-suit-glasses-using-laptop-help-clients 1.png";
-const HeroCourses = () => {
+const HeroCourses = (props) => {
+  console.log(props);
   return (
     <div className="ma-hero">
       <div className=" container ma-hero-two ">
@@ -9,9 +10,8 @@ const HeroCourses = () => {
           pThree="6 months"
           pfour="profession:"
           under=""
-          hOne="UI/UX designer "
-          pOne=" You will learn how to create a brand identity on the web and for printing. Learn how to work in Illustrator, Photoshop, InDesign and Figma.
-          Add posters, logos, merch design and other strong projects to your portfolio. Start a career in the studio or freelance."
+          hOne={props.title}
+          pOne={props.desc}
           button="Started"
           hTow="25%"
           pTow="24 Days 17:44:16"
